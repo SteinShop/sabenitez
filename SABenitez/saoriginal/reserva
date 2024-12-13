@@ -1,0 +1,80 @@
+nomes = [];
+posVetor = [];
+
+function cadastrar(){
+    let addnome;
+    addnome = prompt("Digite seu nome")
+    nomes.push(addnome);
+
+}
+
+function editar(){
+    nomeEdit = prompt("Qual nome deseja editar?");
+    nomenovo = prompt("Qual o novo nome?");
+    posVetor = nomes.indexOf(nomeEdit)
+    nomes[posVetor] = nomenovo
+}
+
+function excluir(){
+    nomeDel = prompt("Qual nome deletar?")
+    posVetor = nomes.indexOf(nomeDel);
+    nomes.splice(posVetor, 1)
+
+}
+
+function listar(){
+    alert(nomes)
+} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="div1">
+        <h1>DemétrisBank</h1>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="editar()">Editar</button>
+        <button onclick="excluir()">Excluir</button>
+        <button onclick="listar()">Listar</button>
+
+    </div>
+   
+   
+
+
+    <script src="crud.js"></script>
+</body>
+</html> .div1{
+    height: 50px;
+    border: rgb(0, 255, 34) solid 1px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+button{
+    border-radius: 20px;
+    height: 50px;
+    width: 120px;
+    font-size: smaller;
+    font-style: normal;
+    background-color:rgb(159, 230, 54);
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+}
+
+html{
+    background-color: rgb(4, 7, 4);
+}

@@ -1,0 +1,76 @@
+/* Estilizando o corpo da página */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #2f3b2e; /* Cor de fundo mais suave */
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3a4c39; /* Cor de fundo escura para o conteúdo */
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #f1f1f1;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+/* Estilo dos botões */
+.button-container {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+button {
+    border-radius: 25px; /* Bordas arredondadas */
+    height: 50px;
+    width: 150px;
+    font-size: 1em;
+    background-color: #9fe636; /* Verde claro */
+    color: #2e2e2e; /* Texto escuro */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button:hover {
+    background-color: #7bd82f; /* Cor de fundo escuro ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
+button:active {
+    background-color: #6b9c27; /* Cor de fundo mais escura ao clicar */
+    transform: translateY(1px); /* Efeito de pressão ao clicar */
+}
+
+/* Estilo da área de listagem (caso você queira adicionar uma área de listagem visual) */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #4a5c48;
+    margin: 5px 0;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
